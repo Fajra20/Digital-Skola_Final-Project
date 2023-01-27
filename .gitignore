@@ -149,6 +149,7 @@ airflow/www/*.log
 airflow-webserver.pid
 standalone_admin_password.txt
 warnings.txt
+logs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -365,7 +366,4 @@ licenses/LICENSES-ui.txt
 # used to checkout target-branch in CI
 /target-airflow
 
-
-#folder logs
-/Final Project/Digital-Skola_Final-Project/finalproject_airflow/logs/
 
