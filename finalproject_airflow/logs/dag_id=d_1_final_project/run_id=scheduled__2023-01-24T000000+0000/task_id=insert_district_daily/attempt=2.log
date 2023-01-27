@@ -1,0 +1,27 @@
+[2023-01-25 14:32:14,839] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: d_1_final_project.insert_district_daily scheduled__2023-01-24T00:00:00+00:00 [queued]>
+[2023-01-25 14:32:14,849] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: d_1_final_project.insert_district_daily scheduled__2023-01-24T00:00:00+00:00 [queued]>
+[2023-01-25 14:32:14,850] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-25 14:32:14,851] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-01-25 14:32:14,851] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-25 14:32:14,872] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): insert_district_daily> on 2023-01-24 00:00:00+00:00
+[2023-01-25 14:32:14,877] {standard_task_runner.py:52} INFO - Started process 320 to run task
+[2023-01-25 14:32:14,881] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'd_1_final_project', 'insert_district_daily', 'scheduled__2023-01-24T00:00:00+00:00', '--job-id', '106', '--raw', '--subdir', 'DAGS_FOLDER/d_1_final_project.py', '--cfg-path', '/tmp/tmpkvhtn6mh', '--error-file', '/tmp/tmp_aaezim6']
+[2023-01-25 14:32:14,883] {standard_task_runner.py:80} INFO - Job 106: Subtask insert_district_daily
+[2023-01-25 14:32:14,962] {task_command.py:369} INFO - Running <TaskInstance: d_1_final_project.insert_district_daily scheduled__2023-01-24T00:00:00+00:00 [running]> on host da01296d3c51
+[2023-01-25 14:32:15,049] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=d_1_final_project
+AIRFLOW_CTX_TASK_ID=insert_district_daily
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-24T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-01-24T00:00:00+00:00
+[2023-01-25 14:32:15,229] {logging_mixin.py:115} INFO - GET DATA FROM SQL SUCCESS
+[2023-01-25 14:32:15,270] {logging_mixin.py:115} INFO - GET DATA FROM SQL SUCCESS
+[2023-01-25 14:32:15,424] {logging_mixin.py:115} INFO - INSERTED TO POSTGRES SUCCESSFULLY
+[2023-01-25 14:32:15,543] {logging_mixin.py:115} INFO - INSERTED TO POSTGRES SUCCESSFULLY
+[2023-01-25 14:32:15,544] {python.py:173} INFO - Done. Returned value was: None
+[2023-01-25 14:32:15,562] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=d_1_final_project, task_id=insert_district_daily, execution_date=20230124T000000, start_date=20230125T143214, end_date=20230125T143215
+[2023-01-25 14:32:15,616] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-01-25 14:32:15,654] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

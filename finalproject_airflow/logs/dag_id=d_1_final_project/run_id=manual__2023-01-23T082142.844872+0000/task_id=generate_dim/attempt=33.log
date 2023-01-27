@@ -1,0 +1,29 @@
+[2023-01-23 11:10:41,262] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: d_1_final_project.generate_dim manual__2023-01-23T08:21:42.844872+00:00 [queued]>
+[2023-01-23 11:10:41,271] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: d_1_final_project.generate_dim manual__2023-01-23T08:21:42.844872+00:00 [queued]>
+[2023-01-23 11:10:41,272] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-23 11:10:41,272] {taskinstance.py:1357} INFO - Starting attempt 33 of 33
+[2023-01-23 11:10:41,273] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-23 11:10:41,291] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): generate_dim> on 2023-01-23 08:21:42.844872+00:00
+[2023-01-23 11:10:41,296] {standard_task_runner.py:52} INFO - Started process 6345 to run task
+[2023-01-23 11:10:41,299] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'd_1_final_project', 'generate_dim', 'manual__2023-01-23T08:21:42.844872+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/d_1_final_project.py', '--cfg-path', '/tmp/tmpq5zc11ut', '--error-file', '/tmp/tmpf8bp6qou']
+[2023-01-23 11:10:41,301] {standard_task_runner.py:80} INFO - Job 91: Subtask generate_dim
+[2023-01-23 11:10:41,357] {task_command.py:369} INFO - Running <TaskInstance: d_1_final_project.generate_dim manual__2023-01-23T08:21:42.844872+00:00 [running]> on host da01296d3c51
+[2023-01-23 11:10:41,427] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=d_1_final_project
+AIRFLOW_CTX_TASK_ID=generate_dim
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-23T08:21:42.844872+00:00
+AIRFLOW_CTX_TRY_NUMBER=33
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-23T08:21:42.844872+00:00
+[2023-01-23 11:10:41,563] {logging_mixin.py:115} INFO - GET DATA FROM SQL SUCCESS
+[2023-01-23 11:10:41,696] {logging_mixin.py:115} INFO - INSERTED TO POSTGRES SUCCESSFULLY
+[2023-01-23 11:10:41,724] {logging_mixin.py:115} INFO - GET DATA FROM SQL SUCCESS
+[2023-01-23 11:10:41,780] {logging_mixin.py:115} INFO - INSERTED TO POSTGRES SUCCESSFULLY
+[2023-01-23 11:10:41,820] {logging_mixin.py:115} INFO - GET DATA FROM SQL SUCCESS
+[2023-01-23 11:10:41,892] {logging_mixin.py:115} INFO - INSERTED TO POSTGRES SUCCESSFULLY
+[2023-01-23 11:10:41,893] {python.py:173} INFO - Done. Returned value was: None
+[2023-01-23 11:10:41,908] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=d_1_final_project, task_id=generate_dim, execution_date=20230123T082142, start_date=20230123T111041, end_date=20230123T111041
+[2023-01-23 11:10:41,954] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-01-23 11:10:42,002] {local_task_job.py:273} INFO - 2 downstream tasks scheduled from follow-on schedule check

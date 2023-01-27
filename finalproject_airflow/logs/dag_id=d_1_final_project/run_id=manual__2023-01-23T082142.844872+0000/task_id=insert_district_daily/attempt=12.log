@@ -1,0 +1,23 @@
+[2023-01-23 10:34:17,288] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: d_1_final_project.insert_district_daily manual__2023-01-23T08:21:42.844872+00:00 [queued]>
+[2023-01-23 10:34:17,297] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: d_1_final_project.insert_district_daily manual__2023-01-23T08:21:42.844872+00:00 [queued]>
+[2023-01-23 10:34:17,298] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-23 10:34:17,298] {taskinstance.py:1357} INFO - Starting attempt 12 of 12
+[2023-01-23 10:34:17,299] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-23 10:34:17,315] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): insert_district_daily> on 2023-01-23 08:21:42.844872+00:00
+[2023-01-23 10:34:17,321] {standard_task_runner.py:52} INFO - Started process 5471 to run task
+[2023-01-23 10:34:17,324] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'd_1_final_project', 'insert_district_daily', 'manual__2023-01-23T08:21:42.844872+00:00', '--job-id', '67', '--raw', '--subdir', 'DAGS_FOLDER/d_1_final_project.py', '--cfg-path', '/tmp/tmp93135ye6', '--error-file', '/tmp/tmp2lg0z98p']
+[2023-01-23 10:34:17,325] {standard_task_runner.py:80} INFO - Job 67: Subtask insert_district_daily
+[2023-01-23 10:34:17,397] {task_command.py:369} INFO - Running <TaskInstance: d_1_final_project.insert_district_daily manual__2023-01-23T08:21:42.844872+00:00 [running]> on host da01296d3c51
+[2023-01-23 10:34:17,479] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=d_1_final_project
+AIRFLOW_CTX_TASK_ID=insert_district_daily
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-23T08:21:42.844872+00:00
+AIRFLOW_CTX_TRY_NUMBER=12
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-23T08:21:42.844872+00:00
+[2023-01-23 10:34:17,481] {python.py:173} INFO - Done. Returned value was: None
+[2023-01-23 10:34:17,494] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=d_1_final_project, task_id=insert_district_daily, execution_date=20230123T082142, start_date=20230123T103417, end_date=20230123T103417
+[2023-01-23 10:34:17,539] {local_task_job.py:156} INFO - Task exited with return code 0
+[2023-01-23 10:34:17,571] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

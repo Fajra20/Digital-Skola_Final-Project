@@ -1,0 +1,32 @@
+[2023-01-23 08:20:24,788] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: d_1_final_project.get_data_from_api manual__2023-01-23T08:17:18.221444+00:00 [queued]>
+[2023-01-23 08:20:24,808] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: d_1_final_project.get_data_from_api manual__2023-01-23T08:17:18.221444+00:00 [queued]>
+[2023-01-23 08:20:24,809] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-23 08:20:24,810] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2023-01-23 08:20:24,811] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-23 08:20:24,844] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): get_data_from_api> on 2023-01-23 08:17:18.221444+00:00
+[2023-01-23 08:20:24,850] {standard_task_runner.py:52} INFO - Started process 2358 to run task
+[2023-01-23 08:20:24,855] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'd_1_final_project', 'get_data_from_api', 'manual__2023-01-23T08:17:18.221444+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/d_1_final_project.py', '--cfg-path', '/tmp/tmpyx6bk5l5', '--error-file', '/tmp/tmpkyo870zm']
+[2023-01-23 08:20:24,857] {standard_task_runner.py:80} INFO - Job 8: Subtask get_data_from_api
+[2023-01-23 08:20:24,941] {task_command.py:369} INFO - Running <TaskInstance: d_1_final_project.get_data_from_api manual__2023-01-23T08:17:18.221444+00:00 [running]> on host da01296d3c51
+[2023-01-23 08:20:25,036] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=d_1_final_project
+AIRFLOW_CTX_TASK_ID=get_data_from_api
+AIRFLOW_CTX_EXECUTION_DATE=2023-01-23T08:17:18.221444+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-01-23T08:17:18.221444+00:00
+[2023-01-23 08:20:25,039] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/d_1_final_project.py", line 13, in fun_get_data_from_api
+    scraper = CovidScraper(variable.get('url_covid_tracker'))
+AttributeError: module '***.models.variable' has no attribute 'get'
+[2023-01-23 08:20:25,063] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=d_1_final_project, task_id=get_data_from_api, execution_date=20230123T081718, start_date=20230123T082024, end_date=20230123T082025
+[2023-01-23 08:20:25,084] {standard_task_runner.py:97} ERROR - Failed to execute job 8 for task get_data_from_api (module '***.models.variable' has no attribute 'get'; 2358)
+[2023-01-23 08:20:25,108] {local_task_job.py:156} INFO - Task exited with return code 1
+[2023-01-23 08:20:25,186] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
