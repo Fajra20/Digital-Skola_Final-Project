@@ -364,3 +364,8 @@ licenses/LICENSES-ui.txt
 
 # used to checkout target-branch in CI
 /target-airflow
+
+
+#folder logs
+/Final Project/Digital-Skola_Final-Project/finalproject_airflow/logs
+
